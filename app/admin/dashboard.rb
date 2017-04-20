@@ -17,6 +17,14 @@ ActiveAdmin.register_page "Dashboard" do
         end
         strong { link_to "View All Products", admin_products_path }
       end
+      
+      section "Recent Categories" do
+        table_for Category.order("created_at desc").limit(5) do
+          column :name
+          column :created_at
+        end
+        strong { link_to "View All Categories", admin_categories_path }
+      end
 
     # Here is an example of a simple dashboard with columns and panels.
     #
