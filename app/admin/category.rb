@@ -1,8 +1,8 @@
-ActiveAdmin.register Product do
+ActiveAdmin.register Category do
 # See permitted parameters documentation:
 # https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
 #
-permit_params :list, :of, :attributes, :on, :model, :name, :price, :released_at, :category
+# permit_params :list, :of, :attributes, :on, :model
 #
 # or
 #
@@ -12,12 +12,4 @@ permit_params :list, :of, :attributes, :on, :model, :name, :price, :released_at,
 #   permitted
 # end
 
-    # index do
-    #     column :name
-    #     column :category
-    #     column "Release Date", :released_at
-    #     column :price
-    # end
-
 end
-
